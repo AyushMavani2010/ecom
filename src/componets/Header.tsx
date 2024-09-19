@@ -6,6 +6,7 @@ import Cart from "./Cart";
 import MenuIcon from "./Menu";
 import Button from "./button/Button";
 import logo from "../assets/images/Oasis.png";
+import Link from 'next/link';
 import Image from "next/image";
 
 const Trolly = styled.button({
@@ -98,7 +99,7 @@ const Header = () => {
       </div>
       <HomeMenu>
         <li>
-          <StyledLink href="/">Home</StyledLink>
+          <StyledLink href="/home">Home</StyledLink>
         </li>
         <li>
           <StyledLink href="/shop">Shop</StyledLink>
@@ -107,8 +108,9 @@ const Header = () => {
           <StyledLink href="#">Categories</StyledLink>
         </li>
         <li>
-          <StyledLink href="#">Blog</StyledLink>
+          <StyledLink href="/">Blog</StyledLink>
         </li>
+        
       </HomeMenu>
       <Flex>
         <Trolly>
