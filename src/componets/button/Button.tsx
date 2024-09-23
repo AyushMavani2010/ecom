@@ -44,7 +44,7 @@ const RootContainer = styled.button<{
 const Button: FC<ButtonProps> = ({
   BgColor,
   borderRadius,
-  height, 
+  height,
   width,
   icon,
   name,
@@ -53,6 +53,7 @@ const Button: FC<ButtonProps> = ({
   onClick,
   style,
   color,
+
   border,
 }) => {
   return (

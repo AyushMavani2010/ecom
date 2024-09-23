@@ -7,6 +7,7 @@ import CategorySecSecImage from "../../assets/images/Nightstand -10 1 (1).png";
 import CategoryThirdImage from "../../assets/images/Nightstand -10 1 (2).png";
 import CategoryCard from "../../componets/Category";
 import Image from "next/image";
+import Button from "@/src/componets/button/Button";
 
 const CategoriesMain = styled.div({
   paddingBottom: "100px",
@@ -53,6 +54,18 @@ const Category = () => {
       </Flex>
       <div>
         <CategoryCard name="Kitchen" image={CategoryThirdImage} />
+      </div>
+      <div>
+        <Button
+          width="150px"
+          height="50px"
+          BgColor="rgba(243, 244, 247, 1)"
+          borderRadius="50px"
+          name="Shop now"
+          color="rgba(104, 106, 116, 1)"
+          border="solid black 2px"  
+          onClick={() => console.log("hrrloo")}
+        />
       </div>
     </CategoriesMain>
   );

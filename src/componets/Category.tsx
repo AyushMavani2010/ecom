@@ -5,7 +5,6 @@ import React, { FC } from "react";
 import Button from "./button/Button";
 import ArrowRight from "./ArrowIcon";
 
-
 interface CategoriesProps {
   name?: string;
   image?: any;
@@ -82,6 +81,7 @@ const Category: FC<CategoriesProps> = ({ name, image, width, style }) => {
               name="Shop now"
               color="rgba(104, 106, 116, 1)"
               border="solid black 2px"
+              onClick={() => console.log("hrrloo")}
             />
           </div>
         </div>
